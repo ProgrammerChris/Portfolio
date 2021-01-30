@@ -2,6 +2,7 @@
 
 import { register } from "register-service-worker";
 import {registerRoute} from 'workbox-routing';
+import {CacheFirst} from 'workbox-strategies';
 
 if (process.env.NODE_ENV === "production") {
   register(`${process.env.BASE_URL}service-worker.js`, {
@@ -36,7 +37,7 @@ if (process.env.NODE_ENV === "production") {
   //Stops re-fetching images if the user clicks back and forth between routes.
   registerRoute(
     new RegExp('/assets/'),
-    new workbox.strategies.CacheFirst()
+    new CacheFirst()
   );
 }
 
