@@ -21,6 +21,9 @@
   #app {
     grid-template-rows: auto;
   }
+  #nav {
+    grid-row: 1;
+  }
 }
 
 </style>
@@ -28,22 +31,11 @@
 <style>
 
 @media screen and (min-width: 768px) and (min-height: 900px) {
-  body {
-    padding-top: 75px;
-  }
   #nav {
     font-size: 28px;
   }
 }
 
-
-
-@media screen and (max-width: 769px) {
-  body {
-    padding-top: 0px;
-  }
-  
-}
 body {
     background: #EEEEEE;
   }
@@ -54,7 +46,7 @@ body {
   text-align: center;
   color: #333333;
   display: grid;
-  grid-template-rows: 200px auto;
+  grid-template-rows: 200px 50px auto;
   grid-template-columns: 10% auto 10%;
 }
 
@@ -86,5 +78,4 @@ body {
 img {
   display: inline;
 }
-
 </style>

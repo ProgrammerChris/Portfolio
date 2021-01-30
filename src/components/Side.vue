@@ -1,6 +1,7 @@
 <template>
   <div id="side">
-    <img alt="Logo" v-bind:src="img" height="191" width="191">
+    <img id="image" alt="Logo" v-bind:src="img" height="191" width="191">
+    <h1 class="overskrift">{{ msg }}</h1>
   </div>
 </template>
 
@@ -19,6 +20,28 @@ export default {
   img {
     display: none;
   }
+  #side{ 
+    grid-template-rows: auto;
+  }
 }
 
+@media screen and (min-width: 768px) and (min-height: 900px) { 
+  .overskrift {
+    padding-top: 20px;
+  }
+}
+.overskrift {
+  grid-row: 2;
+  margin: 0;
+}
+
+</style>
+
+<style>
+#side {
+  display: grid;
+  grid-template-rows: 200px auto;
+  row-gap: 50px;
+  justify-items: center;
+}
 </style>
