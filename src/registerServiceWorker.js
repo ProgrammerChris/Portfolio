@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 
 import { register } from "register-service-worker";
-import { workbox } from "workbox";
+import {registerRoute} from 'workbox-routing';
 
 if (process.env.NODE_ENV === "production") {
   register(`${process.env.BASE_URL}service-worker.js`, {
@@ -34,7 +34,7 @@ if (process.env.NODE_ENV === "production") {
   });
 
   //Stops re-fetching images if the user clicks back and forth between routes.
-  workbox.routing.registerRoute(
+  registerRoute(
     new RegExp('/assets/'),
     new workbox.strategies.CacheFirst()
   );
