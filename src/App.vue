@@ -16,6 +16,9 @@
   #app {
     grid-template-columns: 0% auto 0%;
   }
+  .overskrift {
+    font-size: 42px;
+  }
 }
 @media screen AND (min-width: 600px) AND (max-height: 640px) {
   #app {
@@ -23,6 +26,9 @@
   }
   #nav {
     grid-row: 1;
+  }
+  .overskrift {
+    font-size: 32px;
   }
 }
 
@@ -34,6 +40,7 @@
   #nav {
     font-size: 28px;
   }
+  
 }
 
 body {
@@ -77,5 +84,11 @@ body {
 
 img {
   display: inline;
+}
+
+.overskrift {
+  padding-top: 5%;
+  padding-left: 25%;
+  justify-self: left;
 }
 </style>

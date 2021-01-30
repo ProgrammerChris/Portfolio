@@ -25,11 +25,6 @@ export default {
   }
 }
 
-@media screen and (min-width: 768px) and (min-height: 900px) { 
-  .overskrift {
-    padding-top: 20px;
-  }
-}
 .overskrift {
   grid-row: 2;
   margin: 0;
