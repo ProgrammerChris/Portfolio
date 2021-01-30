@@ -1,5 +1,5 @@
 <template>
-  <div class="prosjekter">
+  <div id="prosjekter" class="side">
     <Side msg="Prosjekter" :img="require('../assets/computer.png')"/>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="hjem">
+  <div id="hjem" class="side">
     <Side msg="Hjem" :img="require('../assets/happy.png')"/>
   </div>
 </template>
@@ -15,11 +15,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-#hjem {
-  display: grid;
-  grid-column: 2;
-  grid-row: 1;
-}
-</style>

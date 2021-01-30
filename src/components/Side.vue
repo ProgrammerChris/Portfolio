@@ -1,7 +1,6 @@
 <template>
-  <div class="side">
+  <div id="side">
     <img alt="Logo" v-bind:src="img" height="191" width="191">
-    <h1>{{ msg }}</h1>
   </div>
 </template>
 
@@ -15,10 +14,11 @@ export default {
 }
 </script>
 
-<style>
-#hjem {
-  display: grid;
-  grid-column: 2;
-  grid-row: 1;
+<style scoped>
+@media screen AND (min-width: 600px) AND (max-height: 640px) {
+  img {
+    display: none;
+  }
 }
+
 </style>

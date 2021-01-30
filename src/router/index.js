@@ -14,19 +14,19 @@ const routes = [
     path: "/om",
     name: "Om",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Om.vue")
+      import("../views/Om.vue")
   },
   {
     path: "/prosjekter",
     name: "Prosjekter",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Prosjekter.vue")
+      import("../views/Prosjekter.vue")
   },
   {
     path: "/kontakt",
     name: "Kontakt",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/Kontakt.vue")
+      import("../views/Kontakt.vue")
   }
 ];
 
