@@ -10,42 +10,31 @@
   </div>
 </template>
 
-
 <style scoped>
 @media screen and (max-width: 376px) {
   #app {
     grid-template-columns: 0% auto 0%;
   }
-  .overskrift {
-    font-size: 42px;
-  }
 }
-@media screen AND (min-width: 600px) AND (max-height: 640px) {
+@media screen and (min-width: 600px) and (max-height: 640px) {
   #app {
     grid-template-rows: auto;
   }
   #nav {
     grid-row: 1;
   }
-  .overskrift {
-    font-size: 32px;
-  }
 }
-
 </style>
 
 <style>
-
 @media screen and (min-width: 768px) and (min-height: 900px) {
   #nav {
     font-size: 28px;
   }
-  
 }
-
 body {
-    background: #EEEEEE;
-  }
+  background: #eeeeee;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -56,39 +45,25 @@ body {
   grid-template-rows: 200px 50px auto;
   grid-template-columns: 10% auto 10%;
 }
-
 #nav {
   grid-column: 2;
   grid-row: 2;
   padding-top: 18px;
 }
-
 #nav a {
   font-weight: bold;
   color: #333333;
   text-decoration: none;
   padding-left: 2%;
   padding-right: 2%;
-  
 }
-
 #nav a.router-link-exact-active {
-  color: #BF0F00;
+  color: #bf0f00;
 }
-
-.side {
-  grid-row: 1;
-  grid-column: 2;
-}
-
-
 img {
   display: inline;
 }
-
-.overskrift {
-  padding-top: 5%;
-  padding-left: 25%;
-  justify-self: left;
+.page {
+  grid-column: 2;
 }
 </style>

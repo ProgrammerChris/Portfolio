@@ -1,29 +1,29 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Hjem from "@/views/Hjem.vue";
+import Home from "@/views/Home.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "Hjem",
-    component: Hjem
+    name: "Home",
+    component: Home
   },
   {
     path: "/om",
-    name: "Om",
-    component: () => import("@/views/Om.vue")
+    name: "About",
+    component: () => import("@/views/About.vue")
   },
   {
     path: "/prosjekter",
-    name: "Prosjekter",
-    component: () => import("@/views/Prosjekter.vue")
+    name: "Projects",
+    component: () => import("@/views/Projects.vue")
   },
   {
     path: "/kontakt",
-    name: "Kontakt",
-    component: () => import("@/views/Kontakt.vue")
+    name: "Contact",
+    component: () => import("@/views/Contact.vue")
   }
 ];
 
