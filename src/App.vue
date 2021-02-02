@@ -10,30 +10,10 @@
   </div>
 </template>
 
-<style scoped>
-@media screen and (max-width: 376px) {
-  #app {
-    grid-template-columns: 0% auto 0%;
-  }
-}
-@media screen and (min-width: 600px) and (max-height: 640px) {
-  #app {
-    grid-template-rows: auto;
-  }
-  #nav {
-    grid-row: 1;
-  }
-}
-</style>
-
 <style>
-@media screen and (min-width: 768px) and (min-height: 900px) {
-  #nav {
-    font-size: 28px;
-  }
-}
 body {
   background: #eeeeee;
+  margin: 0;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -42,26 +22,24 @@ body {
   text-align: center;
   color: #333333;
   display: grid;
-  grid-template-rows: 200px 50px auto;
-  grid-template-columns: 10% auto 10%;
+  grid-template-rows: 200px;
+  grid-template-columns: 2fr minmax(360px, 700px) 2fr;
 }
 #nav {
   grid-column: 2;
+  display: inline-flex;
   grid-row: 2;
-  padding-top: 18px;
+  align-self: end;
+  justify-content: space-around;
 }
 #nav a {
   font-weight: bold;
   color: #333333;
   text-decoration: none;
-  padding-left: 2%;
-  padding-right: 2%;
+  font-size: 1.25em;
 }
 #nav a.router-link-exact-active {
   color: #bf0f00;
-}
-img {
-  display: inline;
 }
 .page {
   grid-column: 2;

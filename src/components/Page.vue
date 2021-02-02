@@ -17,35 +17,32 @@ export default {
 };
 </script>
 
-<style scoped>
-@media screen AND (min-width: 600px) AND (max-height: 640px) {
-  img {
-    display: none;
-  }
-}
-</style>
-
 <style>
 #content {
   display: grid;
-  grid-template-rows: 200px 50px 75px auto;
+  align-content: center;
 }
 img {
   grid-row: 1;
+  margin-bottom: 50px;
   justify-self: center;
 }
 #heading {
-  grid-row: 3;
+  grid-row: 2;
   margin: 0;
-  padding: 0 20% 0 30%;
-  align-self: center;
+  padding-left: 15%;
+  align-self: end;
   text-align: start;
+  font-size: 3em;
+  padding-top: 10px;
 }
 #text {
-  grid-row: 4;
+  grid-row: 3;
   margin: 0;
-  line-height: 30px;
-  padding: 0 20% 0 35%;
+  line-height: 1.5em;
   text-align: start;
+  font-size: 1.25em;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 </style>
