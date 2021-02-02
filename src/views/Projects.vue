@@ -1,6 +1,7 @@
 <template>
   <div id="projects" class="page">
-    <Page msg="Prosjekter" :img="require('../assets/computer.png')" />
+    <Page heading="Se hva jeg har laget!" :img="require('../assets/computer.png')" />
+    <div>Prosjekter i et grid her</div>
   </div>
 </template>
 

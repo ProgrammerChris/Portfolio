@@ -1,6 +1,6 @@
 <template>
   <div id="about" class="page">
-    <Page msg="Om" :img="require('../assets/ready.png')" />
+    <Page heading="Ja, så var det litt om meg..." :img="require('../assets/ready.png')" />
   </div>
 </template>
 

@@ -31,9 +31,10 @@ img {
   grid-row: 2;
   margin: 0;
   padding-left: 15%;
+  padding-right: 10%;
   align-self: end;
   text-align: start;
-  font-size: 3em;
+  font-size: 2em;
   padding-top: 10px;
 }
 #text {
@@ -44,5 +45,8 @@ img {
   font-size: 1.25em;
   padding-left: 20%;
   padding-right: 20%;
+  padding-bottom: 50px;
 }
+
+/* Media Query her for større størrelse på header på desktop */
 </style>

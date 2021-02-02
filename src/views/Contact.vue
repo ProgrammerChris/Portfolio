@@ -1,6 +1,6 @@
 <template>
   <div id="contact" class="page">
-    <Page msg="Kontakt" :img="require('../assets/contact.png')" />
+    <Page heading="Her får du kontakt med meg!" :img="require('../assets/contact.png')" />
   </div>
 </template>
 
