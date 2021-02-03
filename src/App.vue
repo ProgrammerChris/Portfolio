@@ -1,16 +1,29 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <nav id="nav">
       <router-link to="/">Hjem</router-link>
       <router-link to="/prosjekter">Prosjekter</router-link>
       <router-link to="/om">Om meg</router-link>
       <router-link to="/kontakt">Kontakt</router-link>
-    </div>
-    <router-view />
+    </nav>
+    <transition name="fade" mode="out-in">
+      <router-view />
+    </transition>
   </div>
 </template>
 
 <style>
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
 body {
   background: #eeeeee;
   margin: 0;
@@ -42,6 +55,7 @@ body {
   color: #bf0f00;
 }
 .page {
+  display: grid;
   grid-column: 2;
 }
 </style>
