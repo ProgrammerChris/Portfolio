@@ -18,6 +18,18 @@ export default {
 </script>
 
 <style>
+/* Landscape for handheld devices */
+@media handheld, (orientation: landscape) and (max-width: 813px) {
+  img {
+    display: none;
+  }
+  #app {
+    grid-template-rows: 50px;
+  }
+  #nav {
+    grid-row: 1;
+  }
+}
 #content {
   display: grid;
   align-content: center;
