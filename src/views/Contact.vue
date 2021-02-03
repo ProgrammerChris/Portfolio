@@ -40,7 +40,7 @@ export default {
 #contact_form {
   align-self: center;
 }
-@media screen and (min-width: 767px) {
+@media handheld, (orientation: landscape) {
   #mail_img {
     grid-column: 1;
     display: block;

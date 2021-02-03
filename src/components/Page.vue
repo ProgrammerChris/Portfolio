@@ -20,7 +20,7 @@ export default {
 <style>
 /* Landscape for handheld devices */
 @media handheld, (orientation: landscape) and (max-width: 813px) {
-  img {
+  #image {
     display: none;
   }
   #app {
